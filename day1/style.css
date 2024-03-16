@@ -1,0 +1,51 @@
+/*
+declaration block:
+
+selectors {
+  property: value
+  property: value
+} */
+
+/* universal selector */
+* {
+  /* border: 10px solid black; */
+  margin: 0;
+}
+/* type selector  */
+
+p {
+  color: red;
+}
+
+body {
+  /*   background-color: blue;
+  margin: 0; */
+}
+
+/* class selector */
+
+/* DRY */
+.box {
+  width: 300px;
+  height: 300px;
+}
+
+.red-bg {
+  background-color: red;
+  background-color: #ff0000;
+  background-color: #f00;
+  background-color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.198);
+}
+.green-bg {
+  background-color: green;
+}
+.blue-bg {
+  background-color: blue;
+}
+
+#pink-box {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
