@@ -1,0 +1,115 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  color: white;
+
+  /* border */
+  /*  border-width: 10px;
+  border-style: solid;
+  border-color: green;
+
+  */
+  border: 10px solid black;
+  /* single border */
+
+  /*  border-bottom: 10px solid black;
+  border-right: 20px dotted yellow;
+  border-right-style: solid;
+  border-bottom: none;
+   */
+
+  /*   border-radius: 20px;
+  border-top-left-radius: 50px;
+   */
+
+  /* border-radius: 50%; */
+
+  /* Padding */
+  /* padding-top: 20px; */
+  /* targets all 4 directions */
+  /*   padding: 20px; */
+
+  /*  targets vertical and then horizontal axis*/
+  /* padding: 10px 30px; */
+
+  padding: 20px 15px 10px 30px;
+
+  /* margin */
+  margin: 100px;
+  margin: 10px 50px;
+  margin: 10px 20px 30px 40px;
+  margin-bottom: 200px;
+}
+
+/* body {
+ padding-top: 300px;
+  margin: 100px;
+}
+ */
+
+/* Advanced selectors */
+/* Direct descendant */
+
+.menu > li {
+  background-color: red;
+  /* margin-top: 20px; */
+}
+
+/* Descendant selector */
+.menu li {
+  color: green;
+}
+
+/* adjacent selector */
+
+#former + div {
+  background-color: green;
+}
+
+/*
+This would not work because p is not directly adjacent to the #former div
+#former + p {
+  background-color: green;
+}
+*/
+
+/* Multiple selector */
+
+h1,
+h2,
+div > p {
+  color: blue;
+}
+
+/* Attribute selector */
+a[href="https://www.google.com"]
+{
+  color: red;
+}
+
+a[href*="hack"] {
+  color: green;
+}
+
+/* SASS */
+/* body {
+  margin: 0;
+
+  p {
+    color: red;
+  }
+} */
+
+.text-green {
+  color: green;
+}

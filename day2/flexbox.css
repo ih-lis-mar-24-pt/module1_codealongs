@@ -1,0 +1,40 @@
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+/* body {
+  height: 1500px;
+} */
+.container {
+  height: 600px;
+  border: 10px solid black;
+  display: flex;
+  /*  flex-direction: column-reverse; */
+  flex-wrap: wrap;
+  /* flex-flow: column wrap; */
+  justify-content: center;
+  align-items: center;
+  /* aligns items if there's remaining space in the cross axis */
+  /*   align-content: center; */
+}
+
+.blue {
+  background-color: blue;
+  /*  order: 0; */
+}
+.red {
+  background-color: red;
+  /* order: 1; */
+  align-self: flex-start;
+  flex-grow: 1;
+}
+.green {
+  background-color: green;
+  /*  order: 0; */
+  flex-grow: 2;
+}
+.yellow {
+  background-color: yellow;
+  /* order: 0; */
+}
