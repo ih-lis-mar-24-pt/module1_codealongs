@@ -3,7 +3,7 @@ class Game {
         this.startScreen = document.getElementById("game-intro")
         this.gameScreen = document.getElementById("game-screen")
         this.gameEndScreen = document.getElementById("game-end")
-        this.player = null;
+        this.player = new Player(this.gameScreen, 200, 500, 100, 150, "../images/car.png");
         this.heigth = 600;
         this.width = 500;
         this.obstacles = []
@@ -31,13 +31,16 @@ class Game {
 
     gameLoop(){
         console.log("gameLoop")
+        this.update()
+
         if(this.gameIsOver){
             clearInterval(this.gameIntervalId)
         }
+        
     }
 
     update(){
-
+        this.player.move()
     }
 
 }
