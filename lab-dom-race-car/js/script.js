@@ -8,6 +8,8 @@ window.onload = function () {
     startGame();
   });
 
+  //const imgsArray = [ "../images/car.png", "../images/redCar.png"]
+
   function startGame() {
     console.log("start game");
     game = new Game()
@@ -30,16 +32,16 @@ window.onload = function () {
 
     switch(key){
       case "ArrowLeft":
-        game.player.directionX  = -1;
+        game.player.directionX  = -2;
         break;
       case "ArrowRight":
-        game.player.directionX  = 1;
+        game.player.directionX  = 2;
         break;
       case "ArrowDown":
-        game.player.directionY  = 1;
+        game.player.directionY  = 2;
         break;
       case "ArrowUp":
-        game.player.directionY  = -1;
+        game.player.directionY  = -2;
         break;
     }
   }
